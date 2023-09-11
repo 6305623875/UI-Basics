@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-nav{
+            background: linear-gradient(45deg,black,darkslategray);
+            color: white;
+            display: flex;
+            flex-direction: row;
+            padding: 7px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main-nav ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+        }
+        .main-nav ul li a{
+            color: white;
+            text-decoration: none;
+            padding: 7px;
+            font-size: 14px;
+
+        }
+        .text-primary{
+            color: darkcyan;
+        }
+        .main-nav ul li a{
+            color: blue;
+        }
+        .lead{
+            font-size: 21px;
+        }
+        .container{
+            background: purple;
+            background-size: cover;
+            color: white;
+
+        }
+        .container-wrapper{
+            background-color: rgba(0,0,0,0.5);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-wrapper h1{
+            font-size: 50px;
+        }
+        .btn-primary{
+            background-color: rgba(244, 234, 234, 0.5)4, 0.5);
+            border: none;
+            outline: none;
+            font-size: 14px;
+            padding: 14px 25px;
+            margin-top: 10px;
+            border-radius: 5px;
+
+
+        }
+        .btn-primary:hover{
+            box-shadow: 0 0 10px white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <h1>
+            <span>UiBrains</span>
+            <span clss="text-primary">Technologies</span>
+        </h1>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Courses</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Landing Area-->
+    <div class="container">
+        <div class="container-wrapper">
+            <h1>
+                <span>Welcom to</span>
+                <span class="text-primary">Software Development</span>
+            </h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti labore, possimus unde temporibus sed similique, quod accusamus, facilis itaque fugiat consectetur animi! Perspiciatis atque nihil adipisci nemo dolores sapiente rem odit veniam nesciunt, velit omnis fugiat, est eos error! Quis, fugit. Eos praesentium amet reprehenderit velit alias temporibus.</p>
+            <button class="btn-primary">Read More</button>
+        
+        </div>
+    </div>
+</body>
+</html>

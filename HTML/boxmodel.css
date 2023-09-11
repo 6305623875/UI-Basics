@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+}
+
+
+div {
+    background-color: red;
+    width: 100px;
+    width: min-content;
+    width: max-content;
+    width: fit-content;
+    padding: 10px;
+}

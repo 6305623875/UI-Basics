@@ -1,0 +1,9 @@
+.my-class p {
+    color: blueviolet;
+}
+p {
+    color: red;
+}
+strong {
+    color: blue;
+}

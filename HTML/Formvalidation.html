@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    FORM VALIDATION
+
+    <form method="get" action="https://www.google.com" enctype="multipart/form-data" name="Submit-Form">
+        <fieldset>
+            <legend>Form Validation</legend>
+            <p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required minlength="5" maxlength="10" />
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" reqired pattern=".+gamil.com" />
+            </p>
+            <p>
+                <label for="mobile">Mobile</label>
+                <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" />
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required min="35" max="63"/>
+            </p>
+            <p>
+                <label for="">File</label>
+                <input type="file" />
+            </p>
+            <p>
+                <button>Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

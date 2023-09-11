@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form>
+    <p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="Iam a text field" disabled />
+    </p>
+    <p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="Iam a text field" spellcheck="true" />
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" readonly value="anil@gmail.com"/> read only means we can see the data unable to edit
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="enter email" size="4" maxlength="2" autofocus="true"/> 
+    </p>
+    <p>
+        <label>Password:</label>
+        <input type="password" id="password" name="password" />
+    </p>
+    <input type="hidden" name="timestamp"  value="hidden data" />
+    <p><input type="checkbox" id="subscribe" name="subscribe" /></p>
+    <fieldset>
+        <legend>choos all the vegetables you like to eat</legend>
+        <ul>
+            <li>
+                <input type="checkbox" name="vegetables" value="carrots" id="carrots" />
+                <label for="carrots">carrots</label>
+            </li>
+            <li>
+                <input type="checkbox" name="vegetables" value="peas" id="peas" />
+                <label for="peas">peas</label>
+            </li>
+            <li>
+                <input type="checkbox" name="vegetables" value="beans" id="beans" />
+                <label for="beans">beans</label>
+            </li>
+        </ul>
+    </fieldset>
+    <p>
+        <input type="radio" name="minr" />
+    </p>
+    <button type="submit">submit</button>
+
+
+    <legend>what is your favourite meal</legend>
+    <ul>
+        <li>
+            <input type="radio" name="meal" value="curry" id="curry" />
+            <label for="soup">curry</label>
+        </li>
+        <li>
+            <input type="radio" name="meal" value="soup" id="soup" />
+            <label for="soup">soup</label>
+        </li>
+        <li>
+            <input type="radio" name="meal" value="pizza" id="pizza" />
+            <label for="pizza">pizza</label>
+        </li>
+    </ul>
+</fieldset>
+<input type="submit" value="submit form" name="submit" />
+<button>Submit Form</button>
+<input type="reset" value="reset form" />
+<button type="reset">reset form</button>
+<p>
+    <input type="button" value="button" />
+</p>
+ </form>   
+</body>
+</html>

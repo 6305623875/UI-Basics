@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Slide on Image</title>
+    <style>
+        body{
+            background-color: darkslategray;
+        }
+        .container{
+            width: 450px;
+            height: 300px;
+            margin: 100px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px black;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .container img{
+            width: inherit;
+            height: inherit;
+            border-radius: 0 10px 10px 0;
+            transform: translateX(50%);
+            transition: all;
+
+        }
+        .container:hover img{
+            transform: translateY(0%);
+        }
+        .container .content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: aliceblue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: linear-gradient(45deg,blueviolet,deeppink);
+            width: 50%;
+            height: 100%;
+            padding: 14px;
+            box-sizing: border-box;
+            border-radius: 10px 0 0 10px;
+            transform: translateX(0%);
+            transition: all 0.5s;
+
+        }
+        .container:hover .content{
+            transform: translateX(-100%);
+        }
+        .container .content p{
+            font-size: 21px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\ANIL\Downloads\pexels-rajesh-tp-1624487.jpg" alt="">
+        <div class="content">
+            <h2>Food You Love</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eos, iusto, dolores maiores modi sapiente ut, reiciendis error culpa doloremque excepturi.</p>
+
+        </div>
+
+    </div>
+</body>
+</html>
